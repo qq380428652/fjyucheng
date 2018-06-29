@@ -1,0 +1,46 @@
+/* pages/agent/agent.wxss */
+
+.agent {
+  width: 100%;
+  background: #ffdbe6;
+}
+
+.agent .main {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16rpx;
+}
+
+.agent .main .agent-content {
+  font-size: 0;
+}
+
+.agent .main .agent-content image:nth-child(1) {
+  width: 100%;
+  height: 200rpx;
+}
+
+.agent .main .agent-content image:nth-child(2) {
+  width: 100%;
+  height: 232rpx;
+}
+.agent .main .agent-content image:nth-child(3) {
+  width: 100%;
+  height: 752rpx;
+}
+.agent .main .agent-content image:nth-child(4) {
+  width: 100%;
+  height: 994rpx;
+}
+.agent .main .agent-content image:nth-child(5) {
+  width: 100%;
+  height: 480rpx;
+}
+.agent .main .agent-content image:nth-child(6) {
+  width: 100%;
+  height: 812rpx;
+}
+.agent .main .agent-content image:nth-child(7) {
+  width: 100%;
+  height: 448rpx;
+}

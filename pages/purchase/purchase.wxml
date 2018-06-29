@@ -1,0 +1,25 @@
+<!--pages/purchase/purchase.wxml-->
+<view class="purchase">
+  <view class="naver">
+    <view class="content">
+      <view class="title">官方直购</view>
+    </view>
+  </view>
+  <view class="main">
+    <view class='purchase-text'>
+      <view>
+        TST庭秘密官网官方APP直接购买，享最低折扣，TST庭秘密总部直接发货，全国包邮，杜绝假货，保证正品，自主购买省心更省钱！
+      </view>
+      <view class='important'>
+        购买时请输入TST官网优惠码【AAOL009993】，享9.25折优惠。
+      </view>
+      <view class='progress-title'>
+        【TST庭秘密官网】官方购买流程
+      </view>
+    </view>
+    <view class='purchase-content'>
+      <image wx:for="{{purchaseList}}" wx:key="{{*this}}" mode='widthFix' src="{{item}}"></image>
+    </view>
+  </view>
+</view>
+<include src="../common/footer.wxml" />

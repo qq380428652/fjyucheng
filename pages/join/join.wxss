@@ -1,0 +1,60 @@
+/* pages/join/join.wxss */
+
+.join {
+  width: 100%;
+  background: #ffdbe6;
+}
+
+.join .main {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16rpx;
+  font-weight: bold;
+  color: #444;
+  font-size: 30rpx;
+}
+
+.join .main .join-header .join-header-content {
+  text-indent: 64rpx;
+}
+
+.join .main .fill-msg {
+  padding: 32rpx 0;
+}
+
+.join .main .fill-msg .section {
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 32rpx;
+}
+
+.join .main .fill-msg .section .section-title {
+  width: 182rpx;
+  text-align: right;
+}
+
+.join .main .fill-msg .section input, .join .main .fill-msg .section textarea {
+  flex-grow: 1;
+  background-color: #fff;
+  flex-basis: 200rpx;
+  padding: 0 10rpx;
+  line-height: 50rpx;
+  min-height: 64rpx;
+  font-size: 32rpx;
+}
+
+.join .main .fill-msg .section .require {
+  color: red;
+  width: 50rpx;
+  text-align: center;
+}
+
+.join .main .fill-msg .btn-area button {
+  width: 600rpx;
+  margin: 50rpx auto;
+  color: #fff;
+  background: -webkit-linear-gradient(left top,#ff0000, #baff00); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right,#ff0000, #baff00); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right,#ff0000, #baff00);/* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right,#ff0000, #baff00); /* 标准的语法（必须放在最后） */
+}

@@ -1,0 +1,49 @@
+<!--pages/introduct/introduct.wxml-->
+<view class="introduct">
+  <view class="naver">
+    <view class="content">
+      <view class="title">TST简介</view>
+    </view>
+  </view>
+  <view class='main'>
+    <image mode='aspectFit' class='img1' src="../images/201712251344423797.jpg" alt=""></image>
+    <view class='introduct-text'>
+      <view>
+        TST庭秘密是由张庭老公林瑞阳创立于1996年，其前身是台湾知名品牌lafee，19年来其得到了台湾人的一致认可，2013年，林瑞阳将台湾经商多年的技术带回祖国大陆，让大陆人民同样享受TST活酵母带来的美肌秘密。TST活酵母从鲜乳中萃取的活性酵母更具有旺盛的生命力。结合高科技的超微米渗透技术，深入肌肤底层，并且提供细胞再生所需的养分，让活化与修复细胞的效果优化，成功研发了活酵母系列，并以品牌代言人张庭小姐的名字，命名为”Tin’Secret”即“庭秘密”。有生命的TST活酵母系列保养品，从肌肤深层，启动代谢、修复、吸收的调理机制，还原健康的肌肤，自然能有效改善干燥、油脂、粉刺、暗沉、细纹、敏感等各种肌肤问题，为忙碌的你，提供全方位的高效深度保养，持续净、亮、嫩、白。
+      </view>
+      <view>
+        产品包括：TST活酵母，TST修复乳霜，TST冻膜，TST保湿水，TST雪花水，TST冻龄水，TST洁面乳，TST洁面仪，TST美颜仪，TST护眼仪，TST眼部精华霜，TST黄金面膜，TST囧膜，TST苹果肌面膜，TST红酒，TST即食燕窝，TST眼线笔，TST五菌合一活酵母，TST医美系列，TST冻龄蜜，TST精华液，TST面霜，TST乳液，TST眼霜等等。
+      </view>
+    </view>
+    <view class='course introduct-text'>
+      <view class='title'>TST庭秘密的故事</view>
+      <view>1994年,一次探寻复活年轻肌肤奥秘的列国之旅,让台湾第一小生林瑞阳第一次痴迷于来自法国活酵母【Yeast Liquid ZB】的倾世魔力！</view>
+      <view>活酵母的发现揭开了挤奶工宛若孩童般肌肤双手的半个世纪的秘密.</view>
+      <view>
+        萃取于新鲜天然牛乳的活酵母具有高达80％的肌肤吸收活力，让肌底细胞在最短的时间内完成新陈代谢更替，犹如初生玉肌怦然焕发，短短7天实现万千女性的皓颜之梦。</view>
+      <view>
+        以"活酵母"为核心历时两年的产品研发项目，搁浅于几近苛刻的贮藏要求，林瑞阳无奈暂时中止这一全新护肤理念的推广传播。</view>
+      <view>如果说幸福的婚姻是女人不可替代的保养品，那么活酵母面膜就是张庭驻颜10年的私密秘方。</view>
+      <view>
+        当林瑞阳将活酵母作为礼物赠予爱妻时，这一"富有生命力"的焕白驻颜圣品就注定将成为"一传十，十传百"全国皆知的秘密！</view>
+      <view>
+        在张庭的支持与鼓励下，林瑞阳再次启动"活酵母"项目，经过一次又一次的研究与探索，保持活酵母活性的包裏膜生物技术终于诞生，活酵母面膜量产最终得以实现！</view>
+      <view>
+        来自于明星丶好友丶粉丝的炙热呼声，更坚定了林瑞阳和张庭将神奇的活酵母分享给更多爱美女性的决心。</view>
+      <view>
+        自此，全球首款"活的，有生命力的"保养品，不再是张庭一个人私藏10年的秘密。</view>
+      <view>
+        《辣妈学院》《我是大美人》《快乐购》《东方购物》推荐的活的保养品。
+      </view>
+      <image class='img2' mode='aspectFit' src="../images/201712251350368103.png" alt=""></image>
+    </view>
+    <view class="story" >
+      <view class="story-content">
+        <view class="story-content-img">
+          <image wx:for="{{story}}" wx:key="{{*this}}" mode='widthFix' src="{{item}}" ></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<include src="../common/footer.wxml"/>

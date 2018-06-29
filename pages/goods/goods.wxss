@@ -1,0 +1,68 @@
+/* pages/goods/goods.wxss */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.goods {
+  width: 100%;
+  background: #ffdbe6;
+}
+
+.goods .main {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.goods .main .goods-content .nav {
+  padding: 16rpx 10rpx 30rpx;
+  width: 170%;
+  background: #ffdbe6;
+  justify-content: space-between;
+}
+
+.goods .main .goods-content .nav .scroll-view-item {
+  width: 210rpx;
+  background-color: #ed3089;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.goods .main .goods-content .nav .scroll-view-item.active {
+  background: -webkit-linear-gradient(left top, #fef79a , #e84591 60%); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(bottom right,#fef79a , #e84591 60%); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(bottom right, #fef79a , #e84591 60%); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to bottom right, #fef79a , #e84591 60%); /* 标准的语法（必须放在最后） */
+}
+.goods .main .goods-content .goods-list {
+  padding: 70rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 0 10rpx 10rpx #ffbed1 inset;
+  box-sizing:border-box;
+}
+
+.goods .main .goods-content .goods-list .goods-item {
+  padding: 40rpx;
+  box-shadow: 0 0 8rpx 8rpx #eee;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  margin-bottom: 60rpx;
+}
+
+.goods .main .goods-content .goods-list .goods-item image {
+  width: 100%;
+  border: 1px solid #ffdbe6;
+}
+
+.goods .main .goods-content .goods-list .goods-item .goods-item-name {
+  line-height: 64rpx;
+  color: #666;
+  font-weight: bold;
+  font-size: 38rpx;
+}
+

@@ -1,0 +1,25 @@
+<!--pages/contact/contact.wxml-->
+<view class="contact">
+  <view class="naver">
+    <view class="content">
+      <view class="title">联系我们</view>
+    </view>
+  </view>
+  <view class="main">
+    <view class='contact-msg'>
+      <view class='title'>
+        TST活酵母面膜销售代理
+      </view>
+      <view class='contact-style'>
+        <view>联系人：肖小姐（伊伊）</view>
+        <view>微信号：TST921008</view>
+      </view>
+    </view>
+    <view class='contact-img'>
+      <image mode='aspectFit' src="../images/201712281637054766.jpg" ></image>
+      <image mode='aspectFit' src="../images/201712281221012598.jpg"></image>
+    </view>
+  </view>
+</view>
+<include src="../common/footer.wxml"/>
+ 

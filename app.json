@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduct/introduct",
+    "pages/contact/contact",
+    "pages/agent/agent",
+    "pages/purchase/purchase",
+    "pages/goods/goods",
+    "pages/goods_detail/goods_detail",
+    "pages/join/join",
+    "pages/consult/consult"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TST",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ed3089",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/index-icon.png",
+        "selectedIconPath": "pages/images/index-icon-fill.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "iconPath": "pages/images/join-icon.png",
+        "selectedIconPath": "pages/images/join-icon-fill.png",
+        "text": "加入"
+      },
+      {
+        "pagePath": "pages/consult/consult",
+        "iconPath": "pages/images/consult-icon.png",
+        "selectedIconPath": "pages/images/consult-icon-fill.png",
+        "text": "咨询"
+      }
+    ]
+  }
+}

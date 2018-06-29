@@ -1,0 +1,66 @@
+<!--pages/join/join.wxml-->
+<view class="join">
+  <view class="naver">
+    <view class="content">
+      <view class="title">申请代理</view>
+    </view>
+  </view>
+  <view class='main'>
+    <view class='join-content'>
+      <view class='join-header'>
+        <view class="title">在线申请代理：</view>
+        <view class='join-header-content'>
+          请认真填写以下真实信息，信息仅用于为你开通代理权限使用，并且只有我们的工作人员才可以看见，我们将通过电话或微信与你核对，及时关注微信，通过我们的好友验证，并确保无误后，为你开通代理权限。资料提交后，关注下方微信，方便与你取得联系，及时通知你审核结果。（*号为必填）
+        </view>
+      </view>
+      <view class='fill-msg'>
+        <form bindsubmit="formSubmit">
+          <view class="section flex">
+            <view class="section-title">微信号：</view>
+            <input class='wxname' name="wxname" type="text" placeholder="" />
+            <text class='require'>*</text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">手机号：</view>
+            <input class='mobile' name="mobile" type="number" placeholder="" />
+            <text class='require'>*</text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">身份证姓名：</view>
+            <input class='IDname' name="IDname" type="text" placeholder="" />
+            <text class='require'>*</text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">身份证号：</view>
+            <input class='IDnumber' name="IDnumber" type="text" placeholder="" />
+            <text class='require'>*</text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">联系地址：</view>
+            <input class='address' name="address" type="text" placeholder="" />
+            <text class='require'></text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">银行卡号：</view>
+            <input class='bankNumber' name="bankNumber" type="number" placeholder="" />
+            <text class='require'></text>
+          </view>
+          <view class="section flex">
+            <view class="section-title">开户行：</view>
+            <input class='openBank' name="openBank" type="text" placeholder="" />
+            <text class='require'></text>
+          </view>
+           <view class="section flex">
+            <view class="section-title">留言：</view>
+            <textarea show-confirm-bar="true" name="leaveMsg"/>
+            <text class='require'></text>
+          </view>
+          <view class="btn-area">
+            <button formType="submit">提交申请</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+</view>
+<include src="../common/footer.wxml" />

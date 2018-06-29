@@ -1,0 +1,12 @@
+<!--pages/consult/consult.wxml-->
+<view class='consult'>
+  <view class='wx-number'>
+    <text>微信号：xyl1012374900</text>
+  </view>
+  <view class='code'>
+    <image mode='widthFix' src='../images/code.jpg'></image>
+  </view>
+  <view>
+    <text>有任何问题，请关注微信咨询</text>
+  </view>
+</view>

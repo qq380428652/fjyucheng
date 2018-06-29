@@ -1,0 +1,14 @@
+<!-- footer -->
+<view class="footer">
+  <view class='recruit'>
+    <view>TST庭秘密</view>
+    <view>全力打造极致的产品，拥有明星专利成分，其产品品质和国际大牌同级，不惜成本打造安全有效的产品！</view>
+    <view>冻龄女王张庭自创品牌 代理火热招募中!</view>
+    <view>技术支持：寒风个人</view>
+    <view>TST代理微信：xyl1012374900</view>
+  </view>
+  <view class="code">
+    <image src="../images/code.jpg" mode='aspectFit'></image>
+  </view>
+  <text>免费加入</text>
+</view>

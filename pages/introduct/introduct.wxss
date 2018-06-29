@@ -1,0 +1,39 @@
+/* pages/introduct/introduct.wxss */
+
+.introduct {
+  width: 100%;
+  background: #ffdbe6;
+}
+
+.introduct .main .img1 {
+  width: 100%;
+  height: 340rpx;
+}
+
+.introduct .main .introduct-text {
+  font-size: 30rpx;
+  text-indent: 64rpx;
+  line-height: 50rpx;
+  color: #333;
+}
+
+.introduct .main .introduct-text view {
+  margin-bottom: 20rpx;
+}
+
+.introduct .main .course .title {
+  font-size: 32rpx;
+  text-indent: 0;
+  font-weight: bold;
+}
+
+.introduct .main .course .img2 {
+  width: 100%;
+  height: 666rpx;
+}
+.introduct .main .story .story-content .story-content-img{
+  font-size: 0;
+}
+.introduct .main .story .story-content .story-content-img image{
+  width: 100%;
+} 

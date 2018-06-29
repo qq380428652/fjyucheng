@@ -1,0 +1,67 @@
+<!--index.wxml-->
+
+<view class='container'>
+  <!-- header -->
+
+
+  <view class="header">
+    <image class='top-bg' mode="aspectFit" src="../images/top_bg.jpg"></image>
+    <view class="wrap">
+      <view class='title'>欢迎访问TST庭秘密</view>
+      <image class='logo' mode="aspectFit" src="../images/logo.png"></image>
+    </view>
+  </view>
+
+  <!-- banner -->
+
+  <!-- banner -->
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{*this}}">
+        <swiper-item>
+          <image src="{{item.url}}" mode='aspectFill' class="sviewde-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 导航 -->
+
+  <view class="nav-bg">
+    <view class="flex nav-btn-area">
+      <view class='nav-item'>
+        <navigator url="../introduct/introduct">TST简介</navigator>
+      </view>
+      <view class='nav-item'>
+        <navigator url="../goods/goods">产品展示</navigator>
+      </view>
+      <view class='nav-item'>
+        <navigator url="../agent/agent">诚招代理</navigator>
+      </view>
+      <view class='nav-item'>
+        <navigator url="../contact/contact">联系我们</navigator>
+      </view>
+      <view class='nav-item'>
+        <navigator url="../join/join" open-type='switchTab'>申请代理</navigator>
+      </view>
+      <view class='nav-item'>
+        <navigator url="../purchase/purchase">官方直购</navigator>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- TST合伙人 -->
+
+  <view class="cuviewne">
+    <view class='title'>
+      <text>TST庭秘密明星合伙人</text>
+    </view>
+    <view class="pic">
+      <image wx:for="{{partner}}" wx:key="{{*this}}" src="{{item}}" mode='widthFix'></image>
+      <navigator url="../join/join" open-type="switchTab" class="button">免费代理</navigator>
+    </view>
+  </view>
+
+  <include src="../common/footer.wxml" />
+</view>

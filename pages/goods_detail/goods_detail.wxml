@@ -1,0 +1,14 @@
+<!--pages/goods_detail/goods_detail.wxml-->
+<view class="goods-detail">
+  <view class="detail-header">
+    <view class="title">{{goods.name}}</view>
+    <view class="other">
+      <text decode="true">来源：TST&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text>作者：TST</text>
+    </view>
+  </view>
+  <view class="detail-content">
+    <image wx:for="{{goods.imgContentList}}" wx:key="{{*this}}" mode="widthFix" src="{{item}}"></image>
+  </view>
+</view>
+<include src="../common/footer.wxml" />

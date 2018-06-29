@@ -1,0 +1,250 @@
+/**app.wxss**/
+
+page {
+  overflow-x: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.container {
+  font-family: 微软雅黑,
+                 "Helvetica Neue",
+                 Helvetica,
+                 "Hiragino Sans GB",
+                 "Microsoft YaHei",
+                 Arial,
+                 sans-serif;
+  font-size: 32rpx;
+  background-color: #fff;
+  color: #333;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: outside none none;
+  padding: 0;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.content {
+  padding: 10rpx;
+  margin: 0 auto;
+}
+
+/* TST产品
+*/
+
+.naver {
+  width: 100%;
+  overflow: hidden;
+  background: #ffdbe6;
+  padding-top: 5px;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 32rpx;
+}
+
+.naver .content {
+  border-bottom: 1px solid #666;
+  padding: 0;
+}
+
+.naver .content .title {
+  width: 170rpx;
+  margin: 0 auto;
+  line-height: 80rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #7a7a7a;
+  border-bottom: 8rpx solid #ed3089;
+}
+
+.naver .content ul {
+  margin-top: 20rpx;
+}
+
+.naver .content ul li {
+  padding: 0 5rpx;
+  float: left;
+  width: 25%;
+  margin-bottom: 10rpx;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.naver .content ul li a:hover {
+  background: -webkit-linear-gradient(121deg, #fee69a, #e84591 50%); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(121deg, #fee69a, #e84591 50%); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(121deg, #fee69a, #e84591 50%); /* Firefox 3.6 - 15 */
+  background: linear-gradient(121deg, #fee69a, #e84591 50%); /* 标准的语法（必须放在最后） */
+  color: #fff;
+}
+
+.naver .content ul li a {
+  background: #d0d0d0;
+  cursor: pointer;
+  line-height: 50rpx;
+  width: 100%;
+  height: 50rpx;
+  display: block;
+  overflow-y: hidden;
+  text-align: center;
+  color: #525252;
+}
+
+.naver .content ul li.active a {
+  background: -webkit-linear-gradient(121deg, #fee69a, #e84591 50%); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(121deg, #fee69a, #e84591 50%); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(121deg, #fee69a, #e84591 50%); /* Firefox 3.6 - 15 */
+  background: linear-gradient(121deg, #fee69a, #e84591 50%); /* 标准的语法（必须放在最后） */
+}
+
+.naver .content ul li.active a {
+  color: #fff;
+}
+
+/*.naver .content ul li:nth-child(4){margin-right: auto;} */
+
+.naver .content .box {
+}
+
+/* 产品图 */
+
+.chanpin {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.chanpin ul li image {
+  margin-bottom: 10rpx;
+  border: 1rpx solid #f1a7a7;
+  width: 100%;
+}
+
+.chanpin ul li p {
+  padding-top: 5rpx;
+  padding-bottom: 10rpx;
+}
+
+.chanpin ul li {
+  float: left;
+  margin-right: 10rpx;
+  width: 49.1%;
+  border: 1rpx solid #eee;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.chanpin ul li:nth-child(2n) {
+  margin-right: auto;
+}
+
+.chanpin ul li h1 {
+  font-size: 1em;
+  color: #626262;
+}
+
+.chanpin ul li:hover {
+  border: 1rpx solid red;
+  cursor: pointer;
+}
+
+@media (max-width: 414rpx) {
+  .chanpin ul li {
+    width: 100%;
+    border: 1rpx solid #eee;
+    padding: 10rpx;
+    margin-bottom: 20rpx;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+
+  .chanpin ul li h1 {
+    font-size: 1.5em;
+    color: #626262;
+  }
+}
+
+/* 新闻页 */
+
+.xinwen {
+  margin-top: 10rpx;
+}
+
+.xinwen p {
+  line-height: 30rpx;
+  color: #909090;
+  border-bottom: #838383 1rpx dashed;
+}
+
+.xinwen p:before {
+  content: "❉";
+  color: #909090;
+  padding-right: 10rpx;
+}
+
+.xinwen p:hover {
+  color: #ed3089;
+}
+
+/* 简介页 */
+
+.jianjie .content .image {
+  text-align: center;
+}
+
+.jianjie .content p {
+  line-height: 20rpx;
+}
+
+/* 诚招代理 */
+
+.jianjie  .content p image {
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  box-sizing: border-box;
+  padding: 60rpx 20rpx;
+  background: #ed3089;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.footer .recruit {
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.footer .code image {
+  width: 100%;
+  height: 300rpx;
+}

@@ -1,0 +1,14 @@
+<!--pages/agent/agent.wxml-->
+<view class="agent">
+  <view class="naver">
+    <view class="content">
+      <view class="title">诚招代理</view>
+    </view>
+  </view>
+  <view class="main">
+    <view class='agent-content'>
+      <image wx:for="{{agentList}}" wx:key="{{*this}}" mode='widthFix' src="{{item}}"></image>
+    </view>
+  </view>
+</view>
+<include src="../common/footer.wxml" />
