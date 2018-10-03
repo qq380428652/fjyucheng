@@ -5,10 +5,9 @@
 
 
   <view class="header">
-    <image class='top-bg' mode="aspectFit" src="../images/top_bg.jpg"></image>
     <view class="wrap">
-      <view class='title'>欢迎访问TST庭秘密</view>
-      <image class='logo' mode="aspectFit" src="../images/logo.png"></image>
+      <view class='title'>欢迎访问宇诚净唯他！</view>
+      <image class='logo' mode="aspectFit" src="../images/logo.jpg"></image>
     </view>
   </view>
 
@@ -17,14 +16,16 @@
   <!-- banner -->
   <view class="banner">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-      <block wx:for="{{imgUrls}}" wx:key="{{*this}}">
-        <swiper-item>
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item catchtouchmove="stopTouchMove">
           <image src="{{item.url}}" mode='aspectFill' class="sviewde-image" width="355" height="150" />
         </swiper-item>
       </block>
     </swiper>
   </view>
-
+  <!-- 通告栏 -->
+  <van-notice-bar left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png" text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。" />
+  <!-- 通告栏 -->
   <!-- 导航 -->
 
   <view class="nav-bg">
@@ -58,7 +59,7 @@
       <text>TST庭秘密明星合伙人</text>
     </view>
     <view class="pic">
-      <image wx:for="{{partner}}" wx:key="{{*this}}" src="{{item}}" mode='widthFix'></image>
+      <image wx:for="{{partner}}" wx:key="*this" src="{{item}}" mode='widthFix'></image>
       <navigator url="../join/join" open-type="switchTab" class="button">免费代理</navigator>
     </view>
   </view>

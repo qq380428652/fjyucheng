@@ -4,30 +4,31 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: [],
-    indicatorDots: true,
+    imgUrls: [{
+      url: '../images/ban1.jpg'
+    }, {
+      url: '../images/ban2.jpg'
+    }, {
+      url: '../images/ban3.jpg'
+    }, {
+      url: '../images/ban4.jpg'
+    }, {
+      url: '../images/ban5.jpg'
+    }],
+    indicatorDots: false,
     autoplay: true,
     circular: true,
     interval: 3000,
     duration: 1000,
     partner: []
   },
-  getBanner(){
-    // 获取轮播图
-    wx.getStorage({
-      key: 'getBanner',
-      success: (res) => {
-        this.setData({
-          imgUrls: res.data
-        })
-      },
-      fail: (res) => {
-        app.getData('getBanner');
-        this.getBanner();
-      }
-    });
+  stopTouchMove() {
+    return false
   },
-  getImgContent(){
+  getBanner() {
+
+  },
+  getImgContent() {
     // 获取明星合伙人
     wx.getStorage({
       key: 'imgContent',
@@ -46,7 +47,7 @@ Page({
       }
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     this.getBanner();
     this.getImgContent();
   }

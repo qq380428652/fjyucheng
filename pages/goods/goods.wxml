@@ -9,11 +9,11 @@
     <view class='goods-content'>
       <scroll-view scroll-x bindscrolltoupper="upper">
         <view class='nav flex' style="width:{{33.33*type.length+'%'}}">
-          <view wx:for="{{type}}" wx:key="{{*this}}" id="{{index}}" bindtap="selectClassify" class="scroll-view-item {{index == activeIndex?'active':''}}">{{item}}</view>
+          <view wx:for="{{type}}" wx:key="*this" id="{{index}}" bindtap="selectClassify" class="scroll-view-item {{index == activeIndex?'active':''}}">{{item}}</view>
         </view>
       </scroll-view>
       <scroll-view class="goods-list">
-        <navigator url="../goods_detail/goods_detail?objectId={{item.objectId}}" wx:for="{{goods}}" wx:key="{{*this}}" class="goods-item">
+        <navigator url="../goods_detail/goods_detail?objectId={{item.objectId}}" wx:for="{{goods}}" wx:key="*this" class="goods-item">
           <image lazy-load="true" mode="widthFix" src="{{item.coverImg}}"></image>
           <text class="goods-item-name">{{item.name}}</text>
         </navigator>

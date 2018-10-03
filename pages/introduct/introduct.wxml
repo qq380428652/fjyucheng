@@ -40,7 +40,7 @@
     <view class="story" >
       <view class="story-content">
         <view class="story-content-img">
-          <image wx:for="{{story}}" wx:key="{{*this}}" mode='widthFix' src="{{item}}" ></image>
+          <image wx:for="{{story}}" wx:key="*this" mode='widthFix' src="{{item}}" ></image>
         </view>
       </view>
     </view>

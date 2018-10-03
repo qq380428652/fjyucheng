@@ -7,7 +7,7 @@
   </view>
   <view class="main">
     <view class='agent-content'>
-      <image wx:for="{{agentList}}" wx:key="{{*this}}" mode='widthFix' src="{{item}}"></image>
+      <image wx:for="{{agentList}}" wx:key="*this" mode='widthFix' src="{{item}}"></image>
     </view>
   </view>
 </view>
